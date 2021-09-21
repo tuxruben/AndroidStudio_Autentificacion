@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="20dp"
+        android:background="#F2F2F2"
+        android:hint="RESULT"
+        android:padding="12dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutTabla"
+        android:layout_width="545dp"
+        android:layout_height="231dp"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollvertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/scrollhorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/tabla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/getApiBtn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="#3498DB"
+            android:text="VER USUARIO"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/postLibroBtn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="#000000"
+            android:text="Buscar libro"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/getLibrosBtn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="#3498DB"
+            android:text="VER LIBROS"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

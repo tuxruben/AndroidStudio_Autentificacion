@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Autentificacion</string>
+    <string name="urlget">"http://192.168.1.71:8888/laracrud/public/api/auth/user"</string>
+    <string name="urlpost">"http://192.168.1.71:8888/laracrud/public/api/auth/login"</string>
+    <string name="urlpostlibro">"http://192.168.1.71:8888/laracrud/public/api/auth/libro"</string>
+    <string name="urlgetlibro">"http://192.168.1.71:8888/laracrud/public/api/auth/libro"</string>
+    <string name="urlgetLogout">"http://192.168.1.71:8888/laracrud/public/api/auth/logout"</string>
+    <string name="urlpostSignup">"http://192.168.1.71:8888/laracrud/public/api/auth/signup"</string>
+    <string-array name="cabecera_tabla">
+
+        <item>id</item>
+        <item>nombre</item>
+        <item>resumen</item>
+        <item>npagina</item>
+        <item>edicion</item>
+        <item>autor</item>
+        <item>precio</item>
+
+
+    </string-array>
+
+    <string-array name="cabecera_tabla1">
+
+        <item>id</item>
+        <item>nombre</item>
+        <item>Email</item>
+        <item>Email_verified_at(</item>
+        <item>Created_at</item>
+        <item>Updated_at</item>
+
+
+    </string-array>
+</resources>
